@@ -1,0 +1,15 @@
+{
+    "name": "HTML",
+    "dir": "html",
+    "extensions": [
+        "html", "htm"
+    ],
+    "start_comment_block": "<!--",
+    "end_comment_block": "-->",
+    "expertise": [
+        "html"
+    ],
+    "role": [
+        "Senior Markup Engineer"
+    ]
+}

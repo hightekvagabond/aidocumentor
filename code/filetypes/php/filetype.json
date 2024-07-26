@@ -1,0 +1,15 @@
+{
+    "name": "PHP",
+    "dir": "php",
+    "start_comment_block": "/*",
+    "end_comment_block": "*/",
+    "extensions": [
+        "php"
+    ],
+    "expertise": [
+        "php"
+    ],
+    "role": [
+        "Senior Software Engineer"
+    ]
+}

@@ -1,0 +1,1 @@
+each filetype gets a directory in case I need to write custom extentions to deal with that filetype later and store them there

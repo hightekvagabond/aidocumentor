@@ -1,5 +1,8 @@
 {
     "name": "Python",
+    "dir": "py",
+    "start_comment_block": "\"\"\"",
+    "end_comment_block": "\"\"\"",
     "extensions": [
         "py"
     ],
