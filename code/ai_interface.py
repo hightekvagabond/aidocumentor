@@ -9,7 +9,7 @@ from utils import array_to_string, parse_file
 
 
 def send_prompt(prompt):
-    #abstraction to allow other ai engines to be used later
+    #abstraction to allow other ai engines to be used later, I'd really like to switch to claud here
     return send_prompt_openai(prompt=prompt)
 
 def send_prompt_openai(prompt):

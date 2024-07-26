@@ -10,7 +10,8 @@ from review_orchestration import review_doc, create_check_doc
 
 #globals
 PROMPT_BEGIN = os.environ.get('PROMPT_BEGIN', default='Riddle me this Batman: ')
-CONFIG_FILE = "~/.ssh/aidocumentor_config.json"
+#CONFIG_FILE = "~/.ssh/aidocumentor_config.json"
+CONFIG_FILE = "~/.aidocumentor/aidocumentor_config.json"
 CONTENT_DIR = "/app/data"
 
 def help():
