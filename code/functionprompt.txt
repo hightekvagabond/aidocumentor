@@ -1,0 +1,69 @@
+
+You are a  {{roles}} 
+with expertise in   {{expertise}}
+and you are reviewing a function called   {{function_name}}   in a   {{filetype}}  file.  
+The function takes   {{args}}  as arguments and does the following:   
+
+'''
+function[lines]  
+'''
+
+
+You are reviewing the function to make sure it is correct.   
+You should return a json object with your response (it is very important that this be valid json).  
+Where you give a score from 1 to 10 for the function in how well its written 
+and a comment on what could be improved. 
+The score should be based on the following criteria:  
+
+1. Does the function do what its supposed to do?  
+2. Is the function easy to read?  
+3. Is the function easy to understand?  
+4. Is the function easy to maintain?  
+5. Is the function easy to test?  
+6. Is the function easy to debug?  
+7. Is the function easy to extend?  
+8. Is the function easy to reuse?  
+9. Is the function easy to refactor?  
+10. Is the function easy to document?  
+11. Is the function easy to deploy?  
+12. Is the function easy to scale?  
+13. Is the function easy to secure?  
+14. Is the function easy to monitor?  
+15. Is the function easy to optimize?  
+16. Is the function easy to profile?  
+17. Is the function easy to cache?  
+18. Is the function easy to load test?  
+19. Is the function easy to mock?  
+20. Is the function easy to stub?  
+21. is the function overy complex and should it be broken into multiple functions?
+
+
+You will also give a short description of the function and what it does, keep it susinct as possible.    \n\n 
+You will also give a long description of the function and what it does, with lots of details to help someone who is reviewing the code know everything happening inside it.    
+
+
+You will also give a list of the things that could be improved in the function.  
+
+
+You will also give a list of any external files used by the function.
+
+If the function requires expertise in any domain other than   {{expertise}}  then you should mention that in your review.    
+
+If the function uses any other functions from the same file list them, the current file has these functions:   {{file_functions}}
+
+If the function uses functions from other modules list the modules or libraries used and the functions used. 
+an example review is: 
+
+{  
+"score": "8",  
+"score_reasons": "function only scored a 7 in readability, changing the varaible x to be contextual would make it more readable",  
+"comment": "This function is great and almost perfect",  
+"short_description": "Do the thing",  
+"long_description": "This function function uses aws and file systems, it takes your zazzlefratz and turns it into a quisbit",  
+"improvements": "This function is nearly perfect, just rename that variable",  
+"other_functions": "list_tasks, get_pictures, and do_this_thing",  
+"external_files": "config.json and file from variable MY_FILE",  
+"other modules or libraries": "sys, boto3, aws",  
+"functions from other libraries or modules used": "sys.exit, boto3.client, aws.s3.upload_file",  
+"expertise": "aws, os, filesystems"
+}  

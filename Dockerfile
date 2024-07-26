@@ -1,6 +1,9 @@
 # Use the official Python runtime as a parent image
 FROM python:3.7.2-alpine3.9
 
+# Install bash
+RUN apk add --no-cache bash
+
 # Set the working directory to /usr/src/app
 WORKDIR /usr/src/app
 
@@ -14,5 +17,3 @@ RUN pip install --upgrade pip && \
 # Define the command to run your Python script
 CMD ["python", "aicodesuggestions.py"]
 
-
-#test
