@@ -8,11 +8,13 @@ RUN apk add --no-cache bash
 WORKDIR /usr/src/app
 
 # Copy the local code directory into the container at /usr/src/app
-#COPY ./code /usr/src/app
+#COPY ./code /usr/src/app #we are mounting this in rundocker instead
 
-# Install any needed packages specified in requirements.txt
-RUN pip install --upgrade pip && \
-    pip install --no-cache-dir openai requests
+RUN pip install --upgrade pip 
+
+#install requirements.txt
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Define the command to run your Python script
 CMD ["python", "aicodesuggestions.py"]
